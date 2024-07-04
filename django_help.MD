@@ -26,5 +26,5 @@ Create app: `python3 manage.py startapp todolist_app`
 
 Create super user: `python3 manage.py createsuperuser`
 
-Super user: oscar.anaya
+Super user: yesid.anaya
 pwd: Python123*
