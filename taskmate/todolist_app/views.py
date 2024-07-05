@@ -26,6 +26,12 @@ def todolist(request):
         return render(request, 'task.html', context)
 
 
+def delete_task(request, task_id):
+    task = TaskList.objects.get(pk=task_id)
+    task.delete()
+    return redirect('todolist')
+
+
 def about(request):
     context = {'about_text': 'Welcome to About page.'}
     return render(request, 'about.html', context)
